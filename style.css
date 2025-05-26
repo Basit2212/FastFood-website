@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: "Bebas Neue";
+    scroll-behavior: smooth;
 }
 
 img {
@@ -259,32 +260,65 @@ img {
 
 .reserve-img {
     position: relative;
-    display: inline-block;
+    display: block;
     z-index: 1;
 }
-    .reserve-section {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        color: white;
-        text-align: center;
-        width: 50%;
-    }
-.reserve-section input{
-    margin: 10px;
-    height: 45px;
+
+.reserve-img img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
-.reserve-section button{
-    margin: 10px;
-    height: 44px;
+
+.reserve-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
+
 .reserve-sm-heading {
-    font-size: 20px;
+    font-size: 1.2rem;
     text-transform: uppercase;
     color: #3d2514;
     font-weight: 400;
     font-family: "Bebas Neue";
+    letter-spacing: 1px;
 }
 
+
+
+
+@media (min-width: 768px) {
+    .reserve-section form .row > div {
+        padding: 0 10px;
+    }
+
+    .reserve-section input,
+    .reserve-section button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .reserve-section {
+        padding-top: 100px;
+        width: 95%;
+    }
+
+    .reserve-section h1.heading {
+        font-size: 2rem;
+    }
+
+    .reserve-sm-heading {
+        font-size: 1rem;
+    }
+}
