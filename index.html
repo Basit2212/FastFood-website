@@ -10,68 +10,71 @@
         integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="bg-body">
         <br>
+        <div class="bg-1">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#menu">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#events">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-
+            <!-- Content -->
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/assets/logo.png" alt="" srcset=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#menu">menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#events">events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact-us">contact us</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-8">
-                    <div class="hero-details col-lg-10 col-md-12">
-                        <div class="small-heading">
-                            it is a good time for the great taste of burgers
+                <div class="row">
+                    <div  class="col-lg-6 col-md-8">
+                        <div data-aos="fade-right" data-aos-duration="1500" class="hero-details">
+                            <div class="small-heading">
+                                it is a good time for the great taste of burgers
+                            </div>
+                            <div class="big-heading">
+                                burger <br>
+                                <span>week</span>
+                            </div>
                         </div>
-                        <div class="big-heading col-lg-10">
-                            burger <br>
-                            <span>week</span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-10">
+                        <div data-aos="fade-left" data-aos-duration="1500" class="burger-image">
+                            <img  src="assets/delicious-burger-studio.png" alt="Burger">
+                            <div class="pricing-tag">
+                                $5.49 only
+                            </div>
                         </div>
 
                     </div>
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-10 ">
-                    <div class="burger-image">
-                        <img src="/assets/delicious-burger-studio.png" alt="">
-                    </div>
-                    <div class="pricing-tag">
-                        <span>$5.49 only</span>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
-    <section class="burgers pt-5">
+    <section data-aos="fade-up" data-aos-duration="2500" class="burgers pt-5">
         <div class="container">
             <div class="row g-4">
 
@@ -98,25 +101,25 @@
             </div>
         </div>
     </section>
-    <section id="menu" class="new-burger-card-section text-center ">
-        <div class="d-flex justify-content-center align-items-center">
+    <section  id="menu" class="new-burger-card-section text-center ">
+        <div data-aos="fade-right" data-aos-duration="1500" class="d-flex justify-content-center align-items-center">
             <div class="class-burger-btn d-flex justify-content-center align-items-center pt-5 pb-3">
                 <div class="tasty-btn py-2 px-3">
                     always tasty burger
                 </div>
             </div>
         </div>
-        <div class="heading">
+        <div data-aos="fade-left" data-aos-duration="1500" class="heading">
             choose & enjoy
         </div>
         <div class="d-flex justify-content-center align-items-center pt-2">
-            <div class="paragraph col-md-8">
+            <div data-aos="fade-up" data-aos-duration="1500" class="paragraph col-md-8">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia modi possimus cumque eligendi at ea
                 sequi fuga voluptate quas, ex repudiandae officiis nobis recusandae similique voluptatem iusto assumenda
                 aspernatur rem!
             </div>
         </div>
-        <div class="container-fluid my-5">
+        <div data-aos="fade-down" data-aos-duration="1500" class="container-fluid my-5">
             <div class="row justify-content-center gap-4 new-burger-card">
                 <div class="card col-md-3 p-0">
                     <img src="assets/burger-1.png" class="card-img-top" alt="Burger 1">
@@ -154,7 +157,7 @@
         <div class="upcoming-events-container">
             <div class="row align-items-center">
                 <!-- Content Left -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
+                <div data-aos="fade-right" data-aos-duration="1500" class="col-lg-6 mb-4 mb-lg-0">
                     <div class="heading mb-3">
                         <span>discover</span><br>
                         <h2>upcoming events</h2>
@@ -172,7 +175,7 @@
                 </div>
                 <!-- Image Right -->
                 <div class="col-lg-6">
-                    <img src="assets/grilled-hamburger-meal-with-fries-cheese-generative-ai.jpg" alt="Upcoming Event"
+                    <img data-aos="fade-left" data-aos-duration="1500" src="assets/grilled-hamburger-meal-with-fries-cheese-generative-ai.jpg" alt="Upcoming Event"
                         class="img-fluid rounded">
                 </div>
             </div>
@@ -185,41 +188,52 @@
         <img src="assets/new-bg.png" width="100%" alt="Reservation Background" class="img-fluid">
 
         <section class="reserve-section">
-            <h1 class="reserve-sm-heading">reservation</h1>
-            <h1 class="heading pb-5">
+            <h1 data-aos="fade-right" data-aos-duration="3000" class="reserve-sm-heading">reservation</h1>
+            <h1 data-aos="fade-left" data-aos-duration="3000" class="heading pb-5">
                 Book your table
 
             </h1>
-        <form class="form-inline w-100">
-    <div class="row g-1 justify-content-center">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <input type="text" class="form-control w-100" placeholder="Name">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <input type="email" class="form-control w-100" placeholder="Email">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <input type="date" class="form-control w-100" placeholder="Date">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <input type="time" class="form-control w-100" placeholder="Time">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <input type="number" class="form-control w-100" placeholder="People">
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <button type="submit" class="btn btn-danger w-100">Submit</button>
-        </div>
+            <form data-aos="fade-up" data-aos-duration="3000" class="form-inline w-100">
+                <div class="row g-1 justify-content-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="text" class="form-control w-100" placeholder="Name">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="email" class="form-control w-100" placeholder="Email">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="date" class="form-control w-100" placeholder="Date">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="time" class="form-control w-100" placeholder="Time">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input type="number" class="form-control w-100" placeholder="People">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <button type="submit" class="btn btn-danger w-100">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
     </div>
-</form>
-
-    </section>
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container text-center">
+            <h5 class="mb-3">Follow Us</h5>
+            <div class="d-flex justify-content-center gap-4 mb-3">
+                <a href="#" class="text-light fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-light fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-light fs-4" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-light fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="text-light fs-4" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2025 Burger House. All rights reserved.</p>
+        </div>
+    </footer>
 
     </div>
-<footer class="footer">
-
-</footer>
-    </div>
 
 
 
@@ -230,8 +244,11 @@
 
 
 
-
-
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
