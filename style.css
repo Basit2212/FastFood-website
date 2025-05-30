@@ -74,7 +74,9 @@ img {
   width: 100%;
   margin: 0 !important;    /* Remove any margin */
   z-index: 1030;           /* Ensure it stays on top */
+  
 }
+
 
 .navbar {
     margin: 10px;
@@ -95,7 +97,7 @@ img {
 }
 
 .navbar .nav-link:hover {
-    color: #ffff;
+    color: 	#6a4b38;
 }
 
 .navbar .nav-item {
