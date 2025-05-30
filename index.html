@@ -20,9 +20,9 @@
         <br>
         <div class="bg-1">
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <nav id="mainNavbar" class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand" href="/"><img src="assets/logo.png" alt="Logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="/">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#menu">Menu</a>
@@ -50,7 +50,7 @@
             <!-- Content -->
             <div class="container-fluid">
                 <div class="row">
-                    <div  class="col-lg-6 col-md-8">
+                    <div class="col-lg-6 col-md-8">
                         <div data-aos="fade-right" data-aos-duration="1500" class="hero-details">
                             <div class="small-heading">
                                 it is a good time for the great taste of burgers
@@ -63,7 +63,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div data-aos="fade-left" data-aos-duration="1500" class="burger-image">
-                            <img  src="assets/delicious-burger-studio.png" alt="Burger">
+                            <img src="assets/delicious-burger-studio.png" alt="Burger">
                             <div class="pricing-tag">
                                 $5.49 only
                             </div>
@@ -101,7 +101,7 @@
             </div>
         </div>
     </section>
-    <section  id="menu" class="new-burger-card-section text-center ">
+    <section id="menu" class="new-burger-card-section text-center ">
         <div data-aos="fade-right" data-aos-duration="1500" class="d-flex justify-content-center align-items-center">
             <div class="class-burger-btn d-flex justify-content-center align-items-center pt-5 pb-3">
                 <div class="tasty-btn py-2 px-3">
@@ -175,7 +175,8 @@
                 </div>
                 <!-- Image Right -->
                 <div class="col-lg-6">
-                    <img data-aos="fade-left" data-aos-duration="1500" src="assets/grilled-hamburger-meal-with-fries-cheese-generative-ai.jpg" alt="Upcoming Event"
+                    <img data-aos="fade-left" data-aos-duration="1500"
+                        src="assets/grilled-hamburger-meal-with-fries-cheese-generative-ai.jpg" alt="Upcoming Event"
                         class="img-fluid rounded">
                 </div>
             </div>
@@ -193,28 +194,29 @@
                 Book your table
 
             </h1>
-            <form data-aos="fade-up" data-aos-duration="3000" class="form-inline w-100">
+            <form id="reservationForm" data-aos="fade-up" data-aos-duration="3000" class="form-inline w-100">
                 <div class="row g-1 justify-content-center">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <input type="text" class="form-control w-100" placeholder="Name">
+                        <input type="text" name="name" class="form-control w-100" placeholder="Name" required>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <input type="email" class="form-control w-100" placeholder="Email">
+                        <input type="email" name="email" class="form-control w-100" placeholder="Email" required>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <input type="date" class="form-control w-100" placeholder="Date">
+                        <input type="date" name="date" class="form-control w-100" required>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <input type="time" class="form-control w-100" placeholder="Time">
+                        <input type="time" name="time" class="form-control w-100" required>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <input type="number" class="form-control w-100" placeholder="People">
+                        <input type="number" name="people" class="form-control w-100" placeholder="People" required>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <button type="submit" class="btn btn-danger w-100">Submit</button>
                     </div>
                 </div>
             </form>
+
 
         </section>
 
@@ -243,7 +245,7 @@
 
 
 
-
+<script src="script.js"></script>
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
